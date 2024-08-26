@@ -1,0 +1,155 @@
+/* Side Navigation Bar */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #2c3e50; /* Dark blue-gray background */
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ecf0f1; /* Light gray */
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #e74c3c; /* Light red */
+    background-color: rgba(236, 240, 241, 0.1); /* Subtle background hover */
+    border-radius: 10px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ecf0f1; /* Light gray */
+}
+
+.sidenav ul {
+    padding: 0;
+    margin: 30px 0;
+}
+
+.sidenav ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.sidenav .contact-info {
+    margin-top: 30px;
+    color: #bdc3c7; /* Light gray */
+    text-align: center;
+    font-size: 16px;
+}
+
+.sidenav .contact-info a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.sidenav .sidebar-icons {
+    margin-top: 20px;
+}
+
+.sidenav .sidebar-icons i {
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.sidenav .sidebar-icons i:hover {
+    transform: scale(1.2);
+    color: #e74c3c; /* Light red */
+}
+/* Top Navigation Bar */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topnav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.topnav ul li {
+    margin: 0 15px;
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light gray */
+    font-weight: 700;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.topnav ul li a:hover {
+    color: #e74c3c; /* Light red */
+    background-color: rgba(236, 240, 241, 0.1);
+}
+
+.book-now a {
+    text-decoration: none;
+    color: white;
+}
+
+.book-now {
+    background-color: #e74c3c; /* Light red */
+    color: white;
+    padding: 10px 30px;
+    margin: 0 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.book-now:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topnav ul li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+    }
+}
